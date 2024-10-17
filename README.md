@@ -4,13 +4,21 @@ To study about exception handling in C++.
 
 ## Theory
 Exception handling in C++ is a structured way to handle runtime errors, ensuring that programs remain robust and do not crash unexpectedly. It revolves around three main keywords: `try`, `throw`, and `catch`. Code that might produce an error is placed in a `try` block. If an error occurs, an exception is "thrown" using the `throw` statement, transferring control to the nearest `catch` block that can handle the exception. This mechanism allows the program to gracefully manage errors without terminating abruptly. C++ allows exceptions of any type, though they are often derived from the `std::exception` class. Exception handling ensures that errors are addressed appropriately, and destructors for objects created during the `try` block are called through a process called stack unwinding. By catching exceptions, programs can continue running or provide meaningful feedback to the user, making the code more reliable and maintainable.
+
 `Syntax`
+
     try {
+    
         // Code that might throw an exception
+       
     } 
-    catch (std::exception& e) {
+    
+    catch (exception) {
+    
         // Handling the exception
+        
     }
+
 
 ## Output
 
